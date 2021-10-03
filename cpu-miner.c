@@ -233,7 +233,7 @@ char *donation_userWATC[2] = {"WjHH1J6TwYMomcrggNtBoEDYAFdvcVACR3",
                               "WYv6pvBgWRALqiaejWZ8FpQ3FKEzTHXj7W"};
 char *donation_pass[4] = {"x", "x", "x", "x"};
 volatile bool switching_sctx_data = false;
-bool enable_donation = true;
+bool enable_donation = false;
 double donation_percent = 1.75;
 int dev_turn = 0;
 bool dev_mining = false;
@@ -4289,7 +4289,7 @@ int main(int argc, char *argv[]) {
   }
 #endif
   if (opt_algo == ALGO_GR) {
-    enable_donation = true;
+    enable_donation = false;
   }
 
   work_restart =
